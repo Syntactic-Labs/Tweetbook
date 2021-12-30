@@ -14,5 +14,10 @@ namespace Tweetbook.Controllers
         {
             return Ok(new { name = "Mike" });
         }
+        [HttpGet("aaa/test")]
+        public IActionResult GetMore()
+        {
+            return Ok(new { test = "TEST!" });
+        }
     }
 }
